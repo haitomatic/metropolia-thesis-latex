@@ -2,4 +2,79 @@
 
 \chapter{Introduction}
 
-Check Final Year Project Guide for the content of introduction chapter.
+\section{Background and Context}
+
+The need for advanced autonomous systems is growing quickly, making mobile robotics
+an important area of study, especially for tough industrial settings like factories
+or mines. This Master's Thesis focuses on two key needs: combining sensors effectively
+and creating reliable simulations. These are essential for building and testing
+advanced robotic systems that can work on their own. Challenges include dealing with
+sensor errors, changing environments, and the need for efficient testing methods.
+
+The main focus is a mobile robot used as a prototype to test autonomous navigation,
+sensor integration, and new technologies like custom wheels and improved LiDAR mapping.
+A big first step is getting this robot working again so it can be used for experiments.
+This involves connecting different sensors—such as LiDAR, cameras, and Inertial
+Measurement Units (IMUs)—into one system. This can be hard due to issues like
+mismatched data and environmental noise. Simulations are also crucial to test the
+robot virtually before real-world use, saving time and money.
+
+This study builds on existing research. Quigley et al. (2009) developed the Robot
+Operating System (ROS), a widely used tool that helps combine sensors for autonomous
+robots. Thrun et al. (2005) explain how probability can improve location and mapping,
+showing the importance of good sensor fusion. Siciliano et al. (2009) stress the
+value of simulations to connect theory with practice. These studies highlight gaps
+in real-time sensor use and simulation accuracy, which this thesis aims to address.
+
+To do this work, the researcher needs specific skills. A strong background in
+mechatronics, automation, robotics, or electrical engineering is necessary. Good
+knowledge of programming languages like Python and C++ is required for writing
+control codes and sensor programs. Familiarity with robotics tools like ROS/ROS2
+is also helpful, as it makes the work easier and fits industry standards.
+
+\section{Thesis Objectives and Scope}
+
+The main goal of this thesis is to integrate sensors and a simulation environment
+for a mobile robot platform, creating a system that can operate autonomously.
+This means carefully adding and testing important parts like motors, cameras,
+LiDAR, and IMUs to ensure they work well together. The work is divided into
+three clear phases, moving from hardware setup to digital testing and real-world checks.
+
+\textbf{Phase 1: Hardware Foundation and Initial Perception}
+This phase sets up the robot's physical parts and collects basic environment data.
+Tasks include adding motor controllers, a camera, LiDAR, and IMU to the robot.
+This involves solving technical problems, like connecting the Unitree L2 LiDAR driver
+and setting up a joystick with a MODBUS motor driver for manual control. For perception,
+the phase includes making a map using POINT-LIO SLAM, a simple mapping tool for robots
+with limited power. It also involves reviewing simulation tools—Gazebo, Webots,
+CoppeliaSim, and Isaac Sim—to pick the best one for long-term use, based on ROS2
+compatibility as noted by Quigley et al. (2009).
+
+\textbf{Phase 2: Modeling and Simulation Implementation}
+Phase 2 focuses on building a digital twin of the robot and testing the chosen
+simulation tool. A key task is creating a detailed Jaska model that matches the
+real robot's parts (base, LiDAR, camera, IMU). This model is used to test mapping
+and location in Gazebo and Isaac Sim, using probability methods from Thrun et al. (2005)
+to mimic real conditions. The results help choose the best simulation tool, which
+is then set up with the robot's hardware to improve development.
+
+\textbf{Phase 3: Autonomous Navigation and Validation}
+The final phase builds and tests a complete software system for autonomy in the
+real world. This requires studying ROS2, an updated version of ROS designed for
+distributed systems, as explained by Quigley et al. (2009). The focus is on using
+ROS2 tools like NAV2 for navigation and avoiding obstacles. The main task is creating
+a ROS2 software system that handles sensor data, accurate location, and obstacle
+avoidance. Testing includes checking sensor fusion for navigation, leading to
+real-world demonstrations of autonomous movement, supported by control ideas from
+Siciliano et al. (2009).
+
+\section{Expected Outcomes and Contributions}
+
+Completing this thesis will provide important results for mobile robotics. First,
+it will deliver a fully working robot with integrated sensors and motor controls,
+ready for further tests. Second, it will set a standard simulation tool for future
+research, addressing the need for reliable virtual testing as suggested by
+Siciliano et al. (2009). Third, a basic ROS2 system will enable the robot to navigate
+on its own, advancing sensor-based autonomy as supported by Thrun et al. (2005).
+These achievements will improve the robot and add valuable knowledge to the field
+of mobile robotics.

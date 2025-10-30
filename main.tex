@@ -149,19 +149,19 @@
 % Thesis content if you strictly follow the "Final Year Project guide". Of course, you
 % can adapt to your specific needs (add more chapter, rename them, etc.).
 \input{chapters/introduction.tex}
-% uncomment what you need.
-%\input{chapters/projectSpec.tex}
-%\input{chapters/methods.tex}
-%\input{chapters/theory.tex}
-%\input{chapters/solution.tex}
-%\input{chapters/conclusion.tex}
+\input{chapters/theory.tex}
+\input{chapters/methods.tex}
+\input{chapters/solution.tex}
+\input{chapters/results.tex}
+\input{chapters/discussion.tex}
+\input{chapters/conclusion.tex}
 
 % Sample content to demonstrate LaTeX command. You will likely delete this line and the
 % next \input{sample/*} lines. You are also safe to delete the sample/ folder and its
 % content once you refershed your LaTeX skills. Also check the appendix samples.
-\input{sample/1content.tex}
-\input{sample/2lorem.tex}
-\input{sample/3graph.tex}
+%\input{sample/1content.tex}
+%\input{sample/2lorem.tex}
+%\input{sample/3graph.tex}
 
 %----------------------------------------------------------------------------------------
 %	BIBLIOGRAPHY REFERENCES
@@ -184,17 +184,11 @@
 
 \liite{1}% This is a hack to have right page numbering for each appendix. Make sure to
 % use a unique number for each appendix.
-\input{sample/Xappendix1.tex}% Sample content to demonstrate appendix in LaTeX. You
-% are safe to delete this lines (and the next samples) once you refreshed your LaTeX
-% skills (and safe to delete the sample folder and all its file too).
+\input{chapters/appendix1.tex}% Jaska Platform Technical Specifications
 
 %\addtocontents{toc}{\vspace{11pt}}%fix vertical space for Table of Content
 \liite{2}
-\input{sample/Xappendix2.tex}
-
-\addtocontents{toc}{\vspace{11pt}}
-\liite{3}
-\input{sample/X_R_example.tex}
+\input{chapters/appendix2.tex}% Source Code Repository Structure
 
 
 %----------------------------------------------------------------------------------------

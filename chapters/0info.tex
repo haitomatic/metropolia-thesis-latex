@@ -2,17 +2,17 @@
 
 % Global information (title of your thesis, your name, degree programme, major, etc.)
 
-\def\bilingual{yes}%For Finnish students, you must have 2 abstracts, one in English and one in your native language (Finnish or Swedish), so "yes", your thesis is bilingual.
-%\def\bilingual{no}%For international student writing in English, only one language and one abstract.
+\def\bilingual{no}%For international student writing in English, only one language and one abstract.
+%\def\bilingual{yes}%For Finnish students, you must have 2 abstracts, one in English and one in your native language (Finnish or Swedish), so "yes", your thesis is bilingual.
 
-\def\thesislang{finnish} %change this depending on the main language of the thesis.
-%\def\thesislang{english} % "english" is the only other supported language currently. If someone has the swedish, please contribute!
+\def\thesislang{english} % "english" is the only other supported language currently. If someone has the swedish, please contribute!
+%\def\thesislang{finnish} %change this depending on the main language of the thesis.
 
 \def\secondlang{english} %if the main language is Finnish (or Swedish), you must have 2 abstracts (one in Finnish (or Swedish) and one in English)
 %\def\secondlang{finnish}
 %If the main language is English and that you are native Finnish (or Swedish) speaker, you must have also abstract in your native language on top of the English one.
 
-\author{Nimi/Name} %your first name and last name
+\author{Hai To} %your first name and last name
 
 %\def\alaotsikko{Alaotsikko/Subtitle} %DISABLED, seems not to be an option with the 2018 template. If you really need it, uncomment and modify style/title.tex accordingly.
 
@@ -32,37 +32,35 @@
 \def\thesiscopy{all}
 
 %Finnish section, for title/abstract
-\def\otsikko{Opinnäytetyön otsikko}
-\def\tutkinto{Tutkinto (esim. Insinööri (AMK))} % change to your needs, e.g. "YAMK", etc.
-\def\kohjelma{Koulutusohjelma (esim. Tieto\textendash ja viestintätekniikka)}
-\def\suuntautumis{Ammatillinen pääaine (esim. Mobile Solutions)}
-\def\thesisfi{Insinöörityö}%was Opinnäytetyö
+\def\otsikko{Sensorien ja simulaatioympäristön integrointi liikkuvalle robottialustalle}
+\def\tutkinto{Insinööri (YAMK)} % Master of Engineering
+\def\kohjelma{Tieto- ja viestintätekniikka}
+\def\suuntautumis{Robotiikka ja automaatio}
+\def\thesisfi{Opinnäytetyö}
 \def\ohjaajat{
-Titteli Etunimi Sukunimi\newline
-Titteli Etunimi Sukunimi
+Markku Niiranen, Yliopettaja\newline
 }
 \def\tiivistelma{
-Tämä on tiivistelmän ensimmäinen kappale. Tiivistelmän kappaleet loppuvat komentoon newline, jotta saadaan yksi tyhjä rivi aikaiseksi. \newline
+Opinnäytetyö keskittyy itsenäisesti toimivan liikkuvan robotin rakentamiseen ja testaamiseen. Se sisältää LiDAR-, kamera- ja IMU-sensoreiden lisäämisen sekä simulaation luomisen robotin testaamiseksi ennen todellista käyttöä. Työ jakautuu kolmeen vaiheeseen: laitteiston asettamiseen, digitaalisen mallin tekemiseen ja autonomian testaamiseen todellisessa maailmassa. \newline
 
-Tämä on tiivistlemän toinen kappale.
+Tutkimus käyttää ROS2:ta sensoreiden ja navigaation hallintaan ja arvioi työkaluja kuten Gazebo ja Isaac Sim parhaan simulaation valitsemiseksi. Odotetut tulokset sisältävät toimivan robotin, valitun simulaatiotyökalun ja perusautonomiset navigointijärjestelmän.
 }
-\def\avainsanat{avainsana, avainsana}
-\def\aihe{Lyhyt kuvaus opinnäytetyöstä. Max 255 merkkiä.}%for the pdf metadata/properties. If not used, empty it and also the \def\subject.
+\def\avainsanat{Liikkuva robotti, Sensorien integrointi, Simulaatio, ROS2, Autonominen navigointi}
+\def\aihe{Sensorien ja simulaatioympäristön integrointi autonomisen liikkuvan robottialustan kehitykseen ja testaukseen.}%for the pdf metadata/properties. If not used, empty it and also the \def\subject.
 
 %English section, for title/abstract
-\title{Your title here}
-\def\metropoliadegree{Bachelor of Engineering} % change to your needs, e.g. "master", etc.
-\def\metropoliadegreeprogramme{your degree programme (e.g. Information Technology)}
-\def\metropoliaspecialisation{your major option (e.g. Mobile Solutions)}
-\def\thesisen{Bachelor’s Thesis} % change to your need, e.g. master's
+\title{Integration of Sensors and Simulation Environment for a Mobile Robot Platform}
+\def\metropoliadegree{Master of Engineering} % change to your needs, e.g. "master", etc.
+\def\metropoliadegreeprogramme{Information Technology}
+\def\metropoliaspecialisation{Robotics and Automation}
+\def\thesisen{Master's Thesis} % change to your need, e.g. master's
 \def\metropoliainstructors{
-First name Last name, Title (e.g.: Project Manager)\newline
-First name Last name, Title (e.g.: Principal Lecturer)
+Markku Niiranen, Principal Lecturer\newline
 }
 \def\abstract{
-Abstract content. To force newline between paragraph in the abstract, you must have both a empty line and the newline command. \newline
+The thesis focuses on building and testing a mobile robot that can work on its own. It involves adding sensors like LiDAR, cameras, and IMUs, and creating a simulation to test the robot before real use. The work is divided into three steps: setting up the hardware, making a digital model, and testing autonomy in the real world. \newline
 
-beginning of second paragraph\ldots
+The study uses ROS2 to manage sensors and navigation, and reviews tools like Gazebo and Isaac Sim to pick the best simulation. Expected results include a working robot, a chosen simulation tool, and a basic autonomous navigation system. This work helps improve robot technology for tough industrial settings.
 }
-\def\metropoliakeywords{keyword, keyword}
-\def\subject{short description of the thesis. Max 255 characters.}%for the pdf metadata/properties. If not used, empty it and also the \def\aihe.
+\def\metropoliakeywords{Mobile Robot, Sensor Integration, Simulation, ROS2, Autonomous Navigation}
+\def\subject{Integration of sensors and simulation environment for autonomous mobile robot platform development and testing.}%for the pdf metadata/properties. If not used, empty it and also the \def\aihe.his first line ;)
