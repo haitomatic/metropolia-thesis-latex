@@ -34,47 +34,64 @@ is also helpful, as it makes the work easier and fits industry standards.
 
 \section{Thesis Objectives and Scope}
 
-The main goal of this thesis is to integrate sensors and a simulation environment
-for a mobile robot platform, creating a system that can operate autonomously.
-This means carefully adding and testing important parts like motors, cameras,
-LiDAR, and IMUs to ensure they work well together. The work is divided into
-three clear phases, moving from hardware setup to digital testing and real-world checks.
+The main goal of this thesis is to create a comprehensive digital twin of a mobile
+robot platform through sensor integration and simulation environment development.
+The primary focus is on building an accurate digital representation that mirrors
+the physical robot's capabilities and behaviors. This involves systematically
+integrating sensors and developing simulation models that can effectively replicate
+real-world scenarios. The work is divided into three phases, with the digital twin
+development serving as the central contribution of this research.
 
-\textbf{Phase 1: Hardware Foundation and Initial Perception}
-This phase sets up the robot's physical parts and collects basic environment data.
-Tasks include adding motor controllers, a camera, LiDAR, and IMU to the robot.
-This involves solving technical problems, like connecting the Unitree L2 LiDAR driver
-and setting up a joystick with a MODBUS motor driver for manual control. For perception,
-the phase includes making a map using POINT-LIO SLAM, a simple mapping tool for robots
-with limited power. It also involves reviewing simulation tools—Gazebo, Webots,
-CoppeliaSim, and Isaac Sim—to pick the best one for long-term use, based on ROS2
-compatibility as noted by Quigley et al. (2009).
+\textbf{Phase 1: Sensor Integration and Data Acquisition}
+This foundational phase focuses exclusively on integrating and calibrating the
+robot's sensory systems. Tasks include setting up and configuring the camera,
+LiDAR, and IMU sensors to ensure proper data collection and synchronization.
+This involves solving technical challenges such as connecting the Unitree L2 LiDAR
+driver, calibrating sensor parameters, and establishing reliable data streams.
+For initial perception validation, the phase includes creating basic maps using
+POINT-LIO SLAM to verify sensor functionality. Additionally, this phase involves
+comprehensive evaluation of simulation platforms—Gazebo, Webots, CoppeliaSim, and
+Isaac Sim—to determine the most suitable environment for digital twin development,
+with emphasis on ROS2 compatibility as highlighted by Quigley et al. (2009).
 
-\textbf{Phase 2: Modeling and Simulation Implementation}
-Phase 2 focuses on building a digital twin of the robot and testing the chosen
-simulation tool. A key task is creating a detailed Jaska model that matches the
-real robot's parts (base, LiDAR, camera, IMU). This model is used to test mapping
-and location in Gazebo and Isaac Sim, using probability methods from Thrun et al. (2005)
-to mimic real conditions. The results help choose the best simulation tool, which
-is then set up with the robot's hardware to improve development.
+\textbf{Phase 2: Digital Twin Development and Implementation}
+This phase represents the core contribution of the thesis, focusing on creating
+a comprehensive digital twin of the physical robot. The primary objective is
+developing a high-fidelity virtual model that accurately represents the robot's
+physical characteristics, sensor configurations, and behavioral dynamics. This
+involves creating detailed CAD models, implementing physics-based simulations,
+and establishing real-time data synchronization between the physical and digital
+systems. The digital twin incorporates all sensor modalities (LiDAR, camera, IMU)
+and replicates the robot's kinematic and dynamic properties. Validation occurs
+through comparative testing between simulated and real-world sensor data, using
+probabilistic methods from Thrun et al. (2005) to ensure accuracy. This phase
+establishes the foundation for virtual testing and development workflows.
 
-\textbf{Phase 3: Autonomous Navigation and Validation}
-The final phase builds and tests a complete software system for autonomy in the
-real world. This requires studying ROS2, an updated version of ROS designed for
-distributed systems, as explained by Quigley et al. (2009). The focus is on using
-ROS2 tools like NAV2 for navigation and avoiding obstacles. The main task is creating
-a ROS2 software system that handles sensor data, accurate location, and obstacle
-avoidance. Testing includes checking sensor fusion for navigation, leading to
-real-world demonstrations of autonomous movement, supported by control ideas from
-Siciliano et al. (2009).
+\textbf{Phase 3: Digital Twin Validation and Applications}
+The final phase validates the digital twin through comprehensive testing and
+demonstrates its practical applications. This involves implementing ROS2-based
+communication frameworks to ensure seamless data exchange between physical and
+digital systems, as outlined by Quigley et al. (2009). The digital twin is tested
+for accuracy in various scenarios, including sensor data comparison, kinematic
+validation, and environmental perception tasks. Applications include virtual
+testing of navigation algorithms, sensor fusion validation, and predictive
+maintenance capabilities. The phase culminates in demonstrating the digital twin's
+effectiveness for development, testing, and operational support, establishing its
+value for future research and industrial applications as supported by concepts
+from Siciliano et al. (2009).
 
 \section{Expected Outcomes and Contributions}
 
-Completing this thesis will provide important results for mobile robotics. First,
-it will deliver a fully working robot with integrated sensors and motor controls,
-ready for further tests. Second, it will set a standard simulation tool for future
-research, addressing the need for reliable virtual testing as suggested by
-Siciliano et al. (2009). Third, a basic ROS2 system will enable the robot to navigate
-on its own, advancing sensor-based autonomy as supported by Thrun et al. (2005).
-These achievements will improve the robot and add valuable knowledge to the field
-of mobile robotics.
+Completing this thesis will provide significant contributions to mobile robotics
+and digital twin technology. First, it will deliver a validated methodology for
+creating high-fidelity digital twins of mobile robotic platforms, establishing
+best practices for sensor integration and virtual modeling. Second, it will
+provide a comprehensive digital twin system that enables virtual testing,
+development, and validation workflows, addressing the critical need for reliable
+simulation environments as highlighted by Siciliano et al. (2009). Third, the
+research will contribute validated frameworks for real-time synchronization
+between physical and digital systems, advancing the state-of-the-art in
+cyber-physical systems for robotics as supported by methodologies from
+Thrun et al. (2005). These achievements will not only advance digital twin
+technology but also provide valuable tools and knowledge for the broader
+mobile robotics research community.
